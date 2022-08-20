@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 const Address = () => {
 
@@ -10,20 +10,11 @@ const Address = () => {
 
   const [checkIp, setCheckIp] = useState('City');
 
-  ip().then(data => {
-    const timer = setTimeout(() => {
-      setCheckIp(data);
-      console.log(data);
-    }, 60000)
-  })  // исправить оптимизацию, непрерывно летят запросы с сервера, сейчас раз в минуту из-за таймера
-
-  //city: "Krasnodar"
-  // continentCode: "EU"
-  // continentName: "Europe"
-  // countryCode: "RU"
-  // countryName: "Russia"
-  // ipAddress: "91.210.45.53"
-  // stateProv: "Krasnodarskiy"
+  useEffect(() =>  {ip().then(data => {
+      if (checkIp === 'City') {
+        setCheckIp(data);
+        console.log(data);
+      }})});
 
   return (
     <div>
