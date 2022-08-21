@@ -3,6 +3,7 @@ import Address from "./components/Address";
 import Battery from "./components/Battery";
 import Coords from "./components/Coords";
 import Monitor from "./components/Monitor";
+import History from "./components/History";
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
       <Coords/>
       <br/>
       <Monitor/>
+      <br/>
+      <History/>
     </div>
   );
 }
