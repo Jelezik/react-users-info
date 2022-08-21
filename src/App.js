@@ -4,6 +4,7 @@ import Battery from "./components/Battery";
 import Coords from "./components/Coords";
 import Monitor from "./components/Monitor";
 import History from "./components/History";
+import Browser from "./components/Browser";
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
       <Coords/>
       <br/>
       <Monitor/>
+      <br/>
+      <Browser/>
       <br/>
       <History/>
     </div>

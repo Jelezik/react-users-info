@@ -13,7 +13,6 @@ const Battery = () => {
     batteryInfo().then(data => {
       if (checkBattery === 'Information Battery') {
       setCheckBattery(data);
-      console.log(data);
       }
     })
   })

@@ -13,7 +13,6 @@ const Address = () => {
   useEffect(() =>  {ip().then(data => {
       if (checkIp === 'City') {
         setCheckIp(data);
-        console.log(data);
       }})});
 
   return (
