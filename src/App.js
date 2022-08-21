@@ -1,6 +1,7 @@
 import React from 'react';
 import Address from "./components/Address";
 import Battery from "./components/Battery";
+import Coords from "./components/Coords";
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
       <Address/>
       <br/>
       <Battery/>
+      <br/>
+      <Coords/>
     </div>
   );
 }
