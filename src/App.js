@@ -2,6 +2,7 @@ import React from 'react';
 import Address from "./components/Address";
 import Battery from "./components/Battery";
 import Coords from "./components/Coords";
+import Monitor from "./components/Monitor";
 
 function App() {
 
@@ -14,6 +15,8 @@ function App() {
       <Battery/>
       <br/>
       <Coords/>
+      <br/>
+      <Monitor/>
     </div>
   );
 }
